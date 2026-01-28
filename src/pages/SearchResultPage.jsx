@@ -9,12 +9,12 @@ const SearchResultPage = () => {
     const query = searchParams.get('q');
 
     const Articles = [
-        { id: 1, tags: ['鶏肉', '下ごしらえ', 'てりやき'], type: 'Technique', title: '鶏肉の部位の選び方・使い分け方。下ごしらえやおすすめレシピも！', category: 'テクニック・知識', img: './image/article/homecook_tsushin_tec_251201_main.jpg', tagColor: '#00A9AE' },
-        { id: 2, tags: ['しょうゆ', 'カレー', 'インタビュー', '自炊'], type: 'Interview', title: '油揚げのしょうゆカレーは必食！料理家さんの自炊応援レシピ4品', category: 'インタビュー', img: './image/article/homecook_tsushin_int_251120_main.jpeg', tagColor: '#7097D3' },
-        { id: 3, tags: ['しょうゆ', 'インタビュー'], type: 'Interview', title: '料理家さんのしょうゆがベースの世界のレシピ4選', category: 'インタビュー', img: './image/article/homecook_tsushin_int_251210_main.jpeg', tagColor: '#7097D3' },
-        { id: 4, tags: ['魚', 'フライパン'], type: 'Technique', title: '切り身で簡単煮魚レシピ★フライパンでらくらく！', category: 'テクニック・知識', img: './image/article/homecook_tsushin_tec_251101_main.jpg', tagColor: '#00A9AE' },
-        { id: 5, tags: ['野菜'], type: 'Technique', title: 'にんじん、じゃがいも、玉ねぎ……常備野菜でつくれる！', category: 'テクニック・知識', img: './image/article/homecook_tsushin_tec_251120_main.jpg', tagColor: '#00A9AE' },
-        { id: 6, tags: ['しょうゆ', 'インタビュー'], type: 'Interview', title: '料理家さんのしょうゆの魅力再発見！', category: 'インタビュー', img: './image/article/homecook_tsushin_int_251101_main.jpeg', tagColor: '#7097D3' },
+        { id: 1, tags: ['鶏肉', '下ごしらえ', 'てりやき'], type: 'Technique', title: '基本の肉じゃがから学ぶ、味の足し算・引き算の法則', category: 'テクニック・知識', img: './image/article/homecook_tsushin_tec_251201_main.jpg', tagColor: '#00A9AE' },
+        { id: 2, tags: ['しょうゆ', 'カレー', 'インタビュー', '自炊'], type: 'Interview', title: '平日の夜をどう乗り切る？料理家さんのリアルな習慣', category: 'インタビュー', img: './image/article/homecook_tsushin_int_251120_main.jpeg', tagColor: '#7097D3' },
+        { id: 3, tags: ['しょうゆ', 'インタビュー'], type: 'Interview', title: '料理家が語る「私が疲れた日に、自分のために作るもの」', category: 'インタビュー', img: './image/article/homecook_tsushin_int_251210_main.jpeg', tagColor: '#7097D3' },
+        { id: 4, tags: ['魚', 'フライパン'], type: 'Technique', title: '魚の部位の選び方・使い分け方。おすすめレシピも！', category: 'テクニック・知識', img: './image/article/homecook_tsushin_tec_251101_main.jpg', tagColor: '#00A9AE' },
+        { id: 5, tags: ['野菜'], type: 'Technique', title: '火加減でここまで変わる！料理がまとまるシンプルなコツ', category: 'テクニック・知識', img: './image/article/homecook_tsushin_tec_251120_main.jpg', tagColor: '#00A9AE' },
+        { id: 6, tags: ['しょうゆ', 'インタビュー'], type: 'Interview', title: '迷ったとき、料理家さんがチェックしているのはここ', category: 'インタビュー', img: './image/article/homecook_tsushin_int_251101_main.jpeg', tagColor: '#7097D3' },
     ];
 
     const filteredResults = Articles.filter(article => {
