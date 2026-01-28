@@ -1,0 +1,37 @@
+.noFound{
+    text-align: center;
+    min-height: 70vh;
+    padding-top: 120px;
+}
+
+.notFoundTitle {
+    padding: 150px 100px 0px;
+    margin-bottom: 50px;
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: 700;
+    font-family: "noto sans jp";
+    text-align: center;
+    color: #473D34;
+}
+
+.backButton {
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+    border: 2px solid #F08300;
+    border-radius: 50px;
+    color: #F08300;
+    background: #fff;
+    -webkit-box-shadow: 4px 4px 0 #F08300;
+    box-shadow: 4px 4px 0 #F08300;
+    padding: 0.7em 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.backButton:hover {
+    -webkit-box-shadow: -4px -4px 0 #F08300;
+    box-shadow: -4px -4px 0 #F08300;
+}

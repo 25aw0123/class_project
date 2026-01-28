@@ -1,0 +1,26 @@
+#root {
+  max-width: 1980px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #4a4036;   
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+}

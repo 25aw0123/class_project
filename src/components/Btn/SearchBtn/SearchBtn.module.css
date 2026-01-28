@@ -1,0 +1,144 @@
+.searchArea {
+    margin: 0 auto 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 120px;
+}
+
+.searchButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F08300;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgba(157, 157, 157, 0.5);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.searchIcon {
+    position: relative;
+    bottom: 2.5px;
+    width: 45px;
+    height: 45px;
+    animation: korokoro 3.5s linear infinite;
+}
+
+@keyframes korokoro {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    5% {
+        transform: translate(10%, 0%) rotate(10deg);
+    }
+
+    25% {
+        transform: translate(20%, 0%) rotate(20deg);
+    }
+
+    30% {
+        transform: translate(-10%, 0%) rotate(-10deg);
+    }
+
+    35% {
+        transform: translate(-15%, 0%) rotate(-15deg);
+    }
+
+    45% {
+        transform: translate(10%, 0%) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(15%, 0%) rotate(15deg);
+    }
+
+    60% {
+        transform: translate(-5%, 0%) rotate(-5deg);
+    }
+
+    65% {
+        transform: translate(-7%, 0%) rotate(-7deg);
+    }
+
+    75% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+.searchText {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    color: #473D34;
+    display: block;
+}
+
+.searchText span {
+    display: inline-block; 
+    position: absolute; 
+    transform-origin: 50% 50px; 
+    font-size: 12px;
+    color: #473D34;
+    font-weight: bolder;
+    font-family: "noto sans jp";
+}
+
+.char1 { 
+    left: 17px; 
+    top: 12px;
+    transform: rotate(-32deg); 
+}
+
+.char2 { 
+    left: 23px;
+    top: 4px;
+    transform: rotate(-20deg);
+}
+
+.char3 { 
+    left: 33px;
+    transform: rotate(-10deg);
+}
+
+.char4 {
+    right: 33px;
+    transform: rotate(10deg); 
+}
+
+.char5 { 
+    right: 23px;
+    top: 4px;
+    transform: rotate(20deg);
+}
+
+.char6 {
+    right: 17px;
+    top: 12px;
+    transform: rotate(32deg);
+}
+
+.searchArea .searchButton:hover{
+    background-color: #F7AE41;
+    transform: translateX(-50%) scale(1.1);
+}
+
+.searchArea:hover span{
+    color: #F7AE41;
+}

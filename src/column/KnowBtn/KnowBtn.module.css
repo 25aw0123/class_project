@@ -1,0 +1,102 @@
+.knowCard {
+    position: relative;
+    background-color: #FFF;
+    border-radius: 35px;
+    padding: 20px 30px 20px;
+    margin: 30px 40px 30px 20px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25);
+    max-width: 450px;
+    transform: rotate(-5.337deg);
+}
+
+.knowTitle {
+    color: #F7AE41;
+    font-family: "HanziPen TC", "Yuji Boku", "Noto Sans JP", sans-serif;
+    font-size: clamp(20px, 4vw, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.titleJa {
+    margin-right: 20px;
+}
+
+.knowDescription1 {
+    color: #473D34;
+    font-family: "Noto Sans JP";
+    font-size: clamp(16px, 4vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.knowDescription2 {
+    color: #473D34;
+    font-family: "Noto Sans JP";
+    font-size: clamp(16px, 4vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 0;
+}
+
+.linkWrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.roundButton {
+    position: absolute;
+    right: -50px;
+    top: 35%;
+    transform: translateY(-50%);
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F7AE41;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.arrowIcon {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.knowCard:hover {
+    background-color: #FFF9E5;
+    border: #F7AE41 1px solid;
+    color: #F7AE41;
+    box-shadow: 0 10px 25px rgba(71, 61, 52, 0.12);
+}
+
+.knowCard:hover .roundButton {
+    width: 70px;
+    height: 70px;
+}
+
+.knowCard:hover .arrowIcon {
+    font-size: 30px;
+}
+
+.knowCard:hover .articleLink {
+    font-size: clamp(24px, 3vw, 30px);
+}
+
+.knowCard:hover .knowTitle {
+    font-size: 24px;
+}

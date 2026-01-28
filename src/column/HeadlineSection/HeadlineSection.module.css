@@ -1,0 +1,151 @@
+.headlineContainer {
+  padding: 100px 30px 30px;
+  background-color: #FFF2CC;
+  color: #473D34;
+}
+
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(10px, 3vw, 14px);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.title {
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.visualArea {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.typeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  padding-top: 10px;
+}
+
+.tagDot {
+  width: 12px;
+  height: 13px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin-bottom: 10px;
+}
+
+.type {
+  writing-mode: vertical-rl;
+  font-size: clamp(12px, 3vw, 18px);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.imgWrapper {
+  flex: 1;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  display: block;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgWrapper::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: -8px;
+  bottom: -8px;
+  max-width: 500px;
+  background-color: var(--shadow-color, #00A9AE);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.preface {
+  font-size: clamp(16px, 3vw, 20px);
+  line-height: 2;
+  letter-spacing: 0.03em;
+  white-space: pre-wrap;
+}
+
+@media (min-width: 1024px) {
+  .headlineContainer {
+    padding: 120px 100px 60px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas:
+      "info  visual"
+      "title visual"
+      "pref  visual";
+    column-gap: 50px;
+    align-items: start;
+    position: relative;
+  }
+
+  .topInfo {
+    grid-area: info;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .date {
+    margin-right: 20px;
+  }
+
+  .title {
+    grid-area: title;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+
+  .visualArea {
+    position: absolute;
+    bottom: -130px;
+    grid-area: visual;
+    margin-bottom: 0;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .typeWrapper {
+    margin-right: 0;
+    margin-left: 20px;
+    padding-top: 0;
+  }
+
+  .imgWrapper {
+    width: 100%;
+  }
+
+  .preface {
+    grid-area: pref;
+    text-align: left;
+    margin-top: 0;
+  }
+}

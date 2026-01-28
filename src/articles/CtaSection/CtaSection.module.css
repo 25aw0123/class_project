@@ -1,0 +1,28 @@
+.background{
+    background: #FFFAEA;
+    margin: 0 auto;
+    z-index: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ctaBackground{
+    position: relative;
+    margin: 0 0 0 20px;
+    padding-right: 20px;
+    min-height: 50vh;
+    z-index: 1;
+    border-radius: 400px 0 0 400px;
+    background: #FFF2CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardWrapper {
+    z-index: 2;
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+    align-items: center; 
+}

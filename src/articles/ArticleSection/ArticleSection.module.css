@@ -1,0 +1,99 @@
+.articleSection{
+    background-color: #FFFAEA;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.sectionHeader {
+    font-size: clamp(16px, 3vw, 32px);
+    color: #473D34;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.sectionSubtitle {
+    font-family: "HanziPen TC", "Yuji Boku", sans-serif, cursive;
+    font-size: clamp(14px, 3vw, 28px);
+    color: #F7AE41;
+}
+
+.tabNavigation {
+    display: flex;
+    justify-content: left;
+    gap: 0px;
+    border-bottom: 3px solid #F2E6D5;
+    margin-bottom: 40px;
+}
+
+.tabButton {
+    background: #ffffff00;
+    border: 1px solid #F2E6D5;
+    border-bottom: none; 
+    padding: 12px 21px;
+    font-size: clamp(10px, 3vw, 20px);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 15px 15px 0 0; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.articleGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    color: #473D34;
+    font-weight: 700;
+}
+
+.pageNumber {
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.currentPage {
+    color: #E2934D;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navArrow {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+
+    .articleSection{
+        padding: 50px 100px;
+    }
+
+    .articleGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    @media (min-width: 1024px) {
+
+    .articleSection{
+        padding: 50px 100px;
+    }
+
+    .articleGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+}

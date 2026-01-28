@@ -1,0 +1,120 @@
+.mainText {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  color: #473D34;
+  line-height: 1.8;
+}
+
+.mainText h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  margin: 0 0 30px;
+  display: block;
+  align-items: baseline;
+  line-height: 150%;
+}
+
+.mainText h2::before {
+  content: attr(data-number);
+  display: inline-block;
+  margin-right: 20px;
+  color: #FFE28D;
+  font-size: clamp(32px, 3vw, 38px);
+  border-bottom: 1px solid #FFE28D;
+  line-height: 150%;
+}
+
+/*
+.titleText {
+  display: inline;
+  background: linear-gradient(transparent 60%, #FFE28D 60%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.8s ease-out;
+}
+section:hover .titleText {
+  background-size: 100% 100%;
+}
+*/
+
+.mainText p {
+  font-size: clamp(16px, 3vw, 20px);
+  margin-bottom: 50px;
+  line-height: 200%;
+  white-space: pre-wrap;
+}
+
+.pointBox {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin: 40px 0;
+}
+
+.pointHeader {
+  background-color: #FFF2CC;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.pointLabel {
+  color: #F7AE41;
+  font-family: "HanziPen TC", "Yuji Boku", sans-serif;
+  font-weight: 800;
+  font-size: clamp(16px, 3vw, 24px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pointLabel::before {
+  content: "";
+  display: inline-block;
+  width: clamp(18px, 3vw, 26px);
+  height: clamp(18px, 3vw, 26px);
+  background-image: url('/image/stylus.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pointContent {
+  padding: 30px 40px;
+}
+
+.pointContent p {
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-size: clamp(16px, 3vw, 20px);
+  color: #473D34;
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.pointContent figure{
+  margin: 16px 25px;
+}
+
+.pointImg {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pointCaption {
+  font-size: clamp(14px, 3vw, 20px);
+  color: #7b7b7b;
+  text-align: left;
+  line-height: 1.4;
+  display: inline-block;
+}
+
+.content {
+  white-space: pre-wrap;
+}

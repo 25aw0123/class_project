@@ -1,0 +1,119 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px; 
+    width: 95%; 
+    max-width: 700px;
+    position: relative;
+    transform: translateY(-20px);
+    animation: slideIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    to { transform: translateY(0); }
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #473D34;
+    font-weight: 300; 
+    line-height: 1;
+    padding: 0;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D9D9D9; 
+    border-radius: 30px; 
+    overflow: hidden;
+    height: 50px;
+    margin-top: 20px; 
+    margin-bottom: 25px;
+}
+
+.searchInput {
+    flex-grow: 1;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    height: 100%;
+}
+
+.searchIconBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-left: #D9D9D9 solid 1px;
+}
+
+.searchIconBtn img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(10deg);
+}
+
+.keywordTitle {
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 700;
+    color: #473D34;
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.keywordTags {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tagButton {
+    background-color: white;
+    color: #473D34;
+    border: 1px solid #D9D9D9; 
+    border-radius: 25px; 
+    padding: 5px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tagButton:hover {
+    background-color: #ececec90; 
+}
+
+.tagButton.selected {
+  background-color: #ececec90;
+}
