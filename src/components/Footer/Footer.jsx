@@ -7,7 +7,7 @@ const Footer = () => {
             <div className={styles.footerInner}>
 
                 <div className={styles.logoArea}>
-                   <img src="/logo.svg" alt="Logo" className={styles.pcLogo} />
+                   <img src="./logo.svg" alt="Logo" className={styles.pcLogo} />
                 </div>
 
             <ul className={styles.mainNav}>
@@ -17,10 +17,10 @@ const Footer = () => {
 
             <div className={styles.bannerArea}>
                 <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer" className={styles.bannerLink}>
-                    <img src="/image/banner_kikkoman.svg" alt="キッコーマン公式サイト" />
+                    <img src="./image/banner_kikkoman.svg" alt="キッコーマン公式サイト" />
                 </a>
                 <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer" className={styles.bannerLink}>
-                    <img src="/image/banner_homecooking.svg" alt="キッコーマンホームクッキングレシピサイト" />
+                    <img src="./image/banner_homecooking.svg" alt="キッコーマンホームクッキングレシピサイト" />
                 </a>
             </div>
 
@@ -33,10 +33,10 @@ const Footer = () => {
             <div className={styles.snsArea}>
                 <p className={styles.snsLabel}>Follow Us</p>
                 <div className={styles.snsIcons}>
-                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="/image/logo_fb.svg" alt="Facebook" /></a>
-                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="/image/logo_ig.svg" alt="Instagram" /></a>
-                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="/image/logo_x.svg" alt="X" /></a>
-                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="/image/logo_yt.svg" alt="YouTube" /></a>
+                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="./image/logo_fb.svg" alt="Facebook" /></a>
+                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="./image/logo_ig.svg" alt="Instagram" /></a>
+                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="./image/logo_x.svg" alt="X" /></a>
+                <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="./image/logo_yt.svg" alt="YouTube" /></a>
                 </div>
             </div>
 

@@ -12,7 +12,7 @@ const TryBtn = () => {
                 </h3>
                 <div className={styles.linkWrapper}>
                     <div className={styles.roundButton}>
-                        <span className={styles.openIcon}><img src="/image/icon_open_in_new_wh.svg" /></span>
+                        <span className={styles.openIcon}><img src="./image/icon_open_in_new_wh.svg" /></span>
                     </div>
                 </div>
             </a>

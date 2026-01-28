@@ -23,7 +23,7 @@ const SearchBtn = () => {
         <span className={styles.char6}>す</span>
       </p>
       <button className={styles.searchButton} aria-label="記事を検索" onClick={handleSearchClick}>
-        <img className={styles.searchIcon} src='/image/icon_search.svg' alt="検索" />
+        <img className={styles.searchIcon} src='./image/icon_search.svg' alt="検索" />
       </button>
 
       {isSearchModalOpen && <SearchModal onClose={closeModal} />}

@@ -49,7 +49,7 @@ const SearchModal = ({ onClose }) => {
         <form className={styles.searchForm} onSubmit={handleSearchSubmit}>
           <input type="text" placeholder="キーワードを入力" className={styles.searchInput} value={searchTerm} onChange={handleInputChange} />
           <button className={styles.searchIconBtn} aria-label="検索実行">
-            <img className={styles.searchIcon} src='/image/icon_search_orange.svg' alt="検索" />
+            <img className={styles.searchIcon} src='./image/icon_search_orange.svg' alt="検索" />
           </button>
         </form>
 

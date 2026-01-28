@@ -19,7 +19,7 @@ const ConceptSection = () => {
           </p>
         </div>
         <div className={styles.imageWrapper}>
-          <img src="/image/top/top_concept_happy_eating.png" alt="女性が笑って食事をしている様子" className={styles.conceptImage} />
+          <img src="./image/top/top_concept_happy_eating.png" alt="女性が笑って食事をしている様子" className={styles.conceptImage} />
         </div>
       </div>
     </section>

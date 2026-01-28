@@ -20,7 +20,7 @@ const Keyvisual = () => {
         <section className={styles.keyVisual}>
             <div className={styles.topSection}>
                 <div className={styles.imageContainer}>
-                    <img src="/image/top/top_kv_recipebook.png" alt="料理本が開かれている様子" width="431" className={styles.recipeBook} />
+                    <img src="./image/top/top_kv_recipebook.png" alt="料理本が開かれている様子" width="431" className={styles.recipeBook} />
                 </div>
                 <div className={styles.taglineTopContainer}>
                     {taglineTop}
@@ -32,7 +32,7 @@ const Keyvisual = () => {
                     {taglineBottom}
                 </div>
                 <div className={styles.imageContainer}>
-                    <img src="/image/top/top_kv_cooking_prep.png" alt="料理の下ごしらえをしている様子" width="448" className={styles.cookingPrep} />
+                    <img src="./image/top/top_kv_cooking_prep.png" alt="料理の下ごしらえをしている様子" width="448" className={styles.cookingPrep} />
                 </div>
             </div>
         </section>

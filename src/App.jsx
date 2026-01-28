@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import './App.css'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Layout from './Layout'
@@ -10,7 +10,7 @@ import SearchResultPage from './pages/SearchResultPage';
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/article/:id" element={<ColumnPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

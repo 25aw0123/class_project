@@ -4,14 +4,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Link } from "react-router-dom";
 
 const articles = [
-  { id: 1, tag: 'Technique', title: '基本の肉じゃがから学ぶ、味の足し算・引き算の法則', img: '/image/article/homecook_tsushin_tec_251201_main.jpg'},
-  { id: 2, tag: 'Interview', title: '平日の夜をどう乗り切る？料理家さんのリアルな習慣', img: '/image/article/homecook_tsushin_int_251120_main.jpeg' },
-  { id: 3, tag: 'Interview', title: '料理家が語る「私が疲れた日に、自分のために作るもの」', img: '/image/article/homecook_tsushin_int_251210_main.jpeg' },
-  { id: 4, tag: 'Technique', title: '魚の部位の選び方・使い分け方。おすすめレシピも！', img: '/image/article/homecook_tsushin_tec_251101_main.jpg'},
-  { id: 5, tag: 'Technique', title: '火加減でここまで変わる！料理がまとまるシンプルなコツ', img: '/image/article/homecook_tsushin_tec_251120_main.jpg'},
-  { id: 6, tag: 'Interview', title: '迷ったとき、料理家さんがチェックしているのはここ', img: '/image/article/homecook_tsushin_int_251101_main.jpeg'},
+  { id: 1, tag: 'Technique', title: '基本の肉じゃがから学ぶ、味の足し算・引き算の法則', img: './image/article/homecook_tsushin_tec_251201_main.jpg'},
+  { id: 2, tag: 'Interview', title: '平日の夜をどう乗り切る？料理家さんのリアルな習慣', img: './image/article/homecook_tsushin_int_251120_main.jpeg' },
+  { id: 3, tag: 'Interview', title: '料理家が語る「私が疲れた日に、自分のために作るもの」', img: './image/article/homecook_tsushin_int_251210_main.jpeg' },
+  { id: 4, tag: 'Technique', title: '魚の部位の選び方・使い分け方。おすすめレシピも！', img: './image/article/homecook_tsushin_tec_251101_main.jpg'},
+  { id: 5, tag: 'Technique', title: '火加減でここまで変わる！料理がまとまるシンプルなコツ', img: './image/article/homecook_tsushin_tec_251120_main.jpg'},
+  { id: 6, tag: 'Interview', title: '迷ったとき、料理家さんがチェックしているのはここ', img: './image/article/homecook_tsushin_int_251101_main.jpeg'},
 ];
 
 const TAG_COLORS = {
@@ -40,7 +41,7 @@ const SlideSection = () => {
         > {articles.map((article) => (
           <SwiperSlide key={article.id}>
             <div className={styles.cardContainer}>
-              <a href={`/article/${article.id}`} className={styles.cardLink}>
+              <Link to={`/article/${article.id}`} className={styles.cardLink}>
                 <div className={styles.imageBox}>
                   <img src={article.img} alt={article.title} className={styles.cardImage} />
                 </div>
@@ -48,7 +49,7 @@ const SlideSection = () => {
                   <span className={styles.tagDot} style={{ backgroundColor: tagStyles(article.tag).color }}></span>{article.tag}
                 </span>
                 <h3 className={styles.cardTitle}>{article.title}</h3>
-              </a>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

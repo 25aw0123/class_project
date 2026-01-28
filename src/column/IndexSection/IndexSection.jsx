@@ -9,19 +9,30 @@ const IndexSection = ({ article }) => {
     { id: 'section4', text: article.sections[3]?.index4 }
   ].filter(item => item.text);
 
+  const handleScroll = (e, id) => {
+    e.preventDefault(); 
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth", 
+        block: "start", 
+      });
+    }
+  };
+
   return (
     <>
-    <nav className={styles.indexSection}>
-      <h3 className={styles.index}>Index.</h3>
-      <ol className={styles.indexList}>
-        {indexList.map((item) => (
-          <li key={item.id} className={styles.indexItem}>
-            <a href={`#${item.id}`}>{item.text}</a>
-          </li>
-        ))}
-      </ol>
-    </nav>
-    <img className={styles.line} src='/image/line.svg' alt='区切り線' />
+      <nav className={styles.indexSection}>
+        <h3 className={styles.index}>Index.</h3>
+        <ol className={styles.indexList}>
+          {indexList.map((item) => (
+            <li key={item.id} className={styles.indexItem}>
+              <a href={`#${item.id}`} onClick={(e) => handleScroll(e, item.id)}>{item.text}</a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+      <img className={styles.line} src='./image/line.svg' alt='区切り線' />
     </>
   )
 }

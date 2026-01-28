@@ -20,15 +20,15 @@ const CtaSection = ({ article }) => {
             <LikeButton articleId={article.id} />
           </div>
 
-          <img className={styles.line} src='/image/line.svg' alt='区切り線' />
+          <img className={styles.line} src='./image/line.svg' alt='区切り線' />
 
           <p className={styles.sectionLabel}>この記事をシェア</p>
           <div className={styles.snsIcons}>
-            <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="/image/logo_ig_brown.svg" alt="Instagram" /></a>
-            <a href={`https://twitter.com/intent/tweet?url=${currentUrl}&text=${shareText}`} target="_blank" rel="noopener noreferrer"><img src="/image/logo_x_brown.svg" alt="X" /></a>
+            <a href="#" aria-disabled="true" target="_blank" rel="noopener noreferrer"><img src="./image/logo_ig_brown.svg" alt="Instagram" /></a>
+            <a href={`https://twitter.com/intent/tweet?url=${currentUrl}&text=${shareText}`} target="_blank" rel="noopener noreferrer"><img src="./image/logo_x_brown.svg" alt="X" /></a>
           </div>
 
-          <img className={styles.line} src='/image/line.svg' alt='区切り線' />
+          <img className={styles.line} src='./image/line.svg' alt='区切り線' />
 
           <p className={styles.sectionLabel}>関連ワード</p>
           <div className={styles.tags}>

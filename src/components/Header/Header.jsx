@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className={`${styles.headerContent} ${isOpen ? styles.menuOpen : ''}`}>
 
-      <h1><Link to="/" className={styles.logo}><img src="/logo.svg" alt="COOKING note+" width="366" /></Link></h1>
+      <h1><Link to="/" className={styles.logo}><img src="./logo.svg" alt="COOKING note+" width="120" /></Link></h1>
 
       <button
         type="button"
@@ -27,15 +27,15 @@ const Header = () => {
 
       <nav className={`${styles.slideMenu} ${isOpen ? styles.open : ''}`}>
         <ul className={styles.navLinks}>
-          <li onClick={toggleMenu}><Link to="/"><img src="/image/icon_house.svg" alt="トップページのホームのアイコン" className={styles.navIcon} />トップ</Link></li>
-          <li onClick={toggleMenu}><Link to="/articlepage"><img src="/image/icon_book.svg" alt="記事一覧ページの本のアイコン" className={styles.navIcon} />記事一覧</Link></li>
-          <li onClick={toggleMenu}><img src="/image/icon_heart_header.svg" alt="ハートのアイコン" className={`${styles.navIcon} ${styles.favIcon}`} />お気に入り</li>
+          <li onClick={toggleMenu}><Link to="/"><img src="./image/icon_house.svg" alt="トップページのホームのアイコン" className={styles.navIcon} />トップ</Link></li>
+          <li onClick={toggleMenu}><Link to="/articlepage"><img src="./image/icon_book.svg" alt="記事一覧ページの本のアイコン" className={styles.navIcon} />記事一覧</Link></li>
+          <li onClick={toggleMenu}><img src="./image/icon_heart_header.svg" alt="ハートのアイコン" className={`${styles.navIcon} ${styles.favIcon}`} />お気に入り</li>
           <div className={styles.bannerArea}>
           <a href="#" aria-disabled="true" target="_blank" className={styles.bannerLink}>
-            <img src="/image/banner_kikkoman.svg" alt="COOKING note+公式サイト" />
+            <img src="./image/banner_kikkoman.svg" alt="COOKING note+公式サイト" />
           </a>
           <a href="#" aria-disabled="true" target="_blank" className={styles.bannerLink}>
-            <img src="/image/banner_homecooking.svg" alt="COOKING note+レシピサイト" />
+            <img src="./image/banner_homecooking.svg" alt="COOKING note+レシピサイト" />
           </a>
           </div>
         </ul>
