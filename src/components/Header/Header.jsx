@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className={`${styles.headerContent} ${isOpen ? styles.menuOpen : ''}`}>
 
-      <h1><Link to="/" className={styles.logo}><img src="./logo.svg" alt="COOKING note+" width="120" /></Link></h1>
+      <h1><Link to="/" className={styles.logo}><img src={`${import.meta.env.BASE_URL}logo.svg`} alt="COOKING note+" width="120" /></Link></h1>
 
       <button
         type="button"
@@ -32,10 +32,10 @@ const Header = () => {
           <li onClick={toggleMenu}><img src="./image/icon_heart_header.svg" alt="ハートのアイコン" className={`${styles.navIcon} ${styles.favIcon}`} />お気に入り</li>
           <div className={styles.bannerArea}>
           <a href="#" aria-disabled="true" target="_blank" className={styles.bannerLink}>
-            <img src="./image/banner_kikkoman.svg" alt="COOKING note+公式サイト" />
+            <img src={`${import.meta.env.BASE_URL}image/banner_kikkoman.svg`} alt="COOKING note+公式サイト" />
           </a>
           <a href="#" aria-disabled="true" target="_blank" className={styles.bannerLink}>
-            <img src="./image/banner_homecooking.svg" alt="COOKING note+レシピサイト" />
+            <img src={`${import.meta.env.BASE_URL}image/banner_homecooking.svg`} alt="COOKING note+レシピサイト" />
           </a>
           </div>
         </ul>
