@@ -22,7 +22,8 @@ const SearchResultPage = () => {
             return article.tags.includes(tagName);
         }
         if (query) {
-            return article.title.includes(query);
+            return article.title.includes(query) ||
+                article.tags.includes(query);
         }
         return true;
     });
